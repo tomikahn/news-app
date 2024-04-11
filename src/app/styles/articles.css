@@ -1,0 +1,21 @@
+.articles-container{
+    max-width: 70vw;
+    margin: 0 auto;
+
+}
+
+.articles-section{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px)); 
+    justify-content: space-evenly; 
+}
+
+@media only screen and (max-width: 600px) {
+    .articles-container{
+        max-width: 90vw;
+    }
+    .articles-section{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 600px)); 
+    }
+  }
