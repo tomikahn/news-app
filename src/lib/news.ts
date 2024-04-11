@@ -7,7 +7,7 @@ function filterNews(news: News) {
 
 export const fetchNews = async (search?: string) => {
     try {
-        const response = await fetch(`https://newsapi.org/v2/everything?q=${search}&sortBy=popularity&apiKey=${process.env.API_KEY}`);
+        const response = await fetch(`${process.env.API_URL}?q=${search}&sortBy=popularity&apiKey=${process.env.API_KEY}`);
         
         if (!response.ok) {
             throw new Error('Failed to fetch news');
