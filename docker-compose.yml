@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nextjs:
+    build: ./
+    environment:
+      - API_KEY=52c8ae91cebf4c92ae2420887a0a2271
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80

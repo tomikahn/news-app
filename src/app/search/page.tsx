@@ -1,4 +1,4 @@
-import { fetchNews } from "@/src/lib/news"
+import { fetchNews } from "../../lib/news"
 import NewsList from "../components/NewsList"
 import { News } from "@/src/typings"
 import NotFound from "../not-found"
